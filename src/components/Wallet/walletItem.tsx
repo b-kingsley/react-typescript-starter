@@ -20,6 +20,7 @@ const WalletItem: React.FC<WalletItemProps> = ({
     return (
         <div data-testid={`walletItem-${name}`}>
             <h2>{name}</h2>
+            {amount < 0 && <h3>Warning, balance is in negative</h3>}
             <div className="wallet-item-controls">
                 <button title="Decrease" onClick={() => decreaseBalance(name)}>
                     -
