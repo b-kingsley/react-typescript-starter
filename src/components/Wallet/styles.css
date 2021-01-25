@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wallet-item-controls {
+    display: flex;
+    font-size: 2rem;
+}
+
+.wallet-item-controls button,
+.wallet-item-controls span {
+    margin: 0 1rem;
+}
+
+.wallet-item-controls button {
+    width: 4rem;
+    border-width: 0;
+}
